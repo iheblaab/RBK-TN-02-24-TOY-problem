@@ -1,4 +1,4 @@
-/**
+
 
  *
 
@@ -18,4 +18,18 @@
 
  * Should return null or empty string of there is no commonCharacters
 
- *
+ function commonCharacters(a,b){
+
+    var res = ""
+        for (let i = 0; i < a.length; i++) {    
+        for (let j = 0; j < b.length; j++) {
+            if (a.includes(b[i])) {
+                res+= b[i]
+            }
+        }
+        
+        
+        }
+        return res 
+    }
+       

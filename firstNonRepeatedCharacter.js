@@ -13,13 +13,11 @@ const firstNonRepeatedCharacter = function (string) {
   // TODO: your solution here
 }
 const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
-  
-   for (let i = 0; i < string.length; i++) {
-     var cha = string.chatAt(i) 
-       if (sting.indexOf(cha)===string.lastindexOf(cha)) {
-           return cha
-       }
-   }
-    return null
+
+  for (let i = 0; i < string.length; i++) {
+ if (string.indexOf(string[i])===string.lastIndexOf(string[i])) {
+     return string[i]
+ }     
+  }
+  return null
 }
