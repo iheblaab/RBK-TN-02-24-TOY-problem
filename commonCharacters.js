@@ -23,13 +23,13 @@
     var res = ""
         for (let i = 0; i < a.length; i++) {    
         for (let j = 0; j < b.length; j++) {
-            if (a.includes(b[i])) {
-                res+= b[i]
+            if (a.[i]]===(b[i]) && !res.includes(b[i]) && a[i] !==' ') {
+              res += a[i]
             }
         }
         
         
         }
-        return res 
+       return res || null
     }
        
